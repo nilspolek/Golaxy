@@ -49,7 +49,6 @@ The HTML file loads the WebAssembly binary and sets up the entry point to run yo
     </head>
     <body>
         <home></home>
-        <test></test>
     </body>
 </html>
 ```
