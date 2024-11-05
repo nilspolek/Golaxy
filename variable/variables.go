@@ -1,4 +1,4 @@
-package variables
+package variable
 
 import (
 	"github.com/nilspolek/Golaxy/router"
