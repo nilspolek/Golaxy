@@ -10,6 +10,9 @@ Example Code
 Go Code
 Here's an example of how you can use Golaxy to define a simple route and render a "Hello World" page:
 
+```bash
+go get -u github.com/nilspolek/Golaxy
+```
 ```go
 // needs to be compiled to WASM with
 // env GOOS=js GOARCH=wasm go build -o main.wasm main.go
@@ -79,7 +82,7 @@ env GOOS=js GOARCH=wasm go build -o main.wasm main.go
 ```
 Create the necessary HTML and JavaScript files:
 
-And an WASM_EXEC that can be found at 
+And an WASM_EXEC that can be found at
 
 ```bash
 "cp $(go env GOROOT)/lib/wasm/wasm_exec.js ."
