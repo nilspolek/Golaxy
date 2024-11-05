@@ -4,7 +4,7 @@ import (
 	"strings"
 	"syscall/js"
 
-	"wasmTest/component"
+	"github.com/nilspolek/Golaxy/component"
 )
 
 type Router struct {
