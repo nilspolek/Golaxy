@@ -4,22 +4,22 @@ import (
 	"github.com/nilspolek/Golaxy/router"
 )
 
-type Variable struct {
-	value interface{}
+type Variable[T any] struct {
+	value T
 	r     *router.Router
 }
 
-func New(r *router.Router) *Variable {
-	return &Variable{
+func New[T any](r *router.Router) *Variable[T] {
+	return &Variable[T]{
 		r: r,
 	}
 }
 
-func (v *Variable) Set(val interface{}) {
+func (v *Variable[T]) Set(val T) {
 	v.value = val
 	v.r.Render()
 }
 
-func (v *Variable) Get() interface{} {
+func (v *Variable[T]) Get() T {
 	return v.value
 }
