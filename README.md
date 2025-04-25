@@ -106,7 +106,7 @@ Your project directory should look something like this:
 └── index.html
 ```
 ## Requirements
-Go 1.11+ (for WebAssembly support).
+Go 1.24+ (for WebAssembly support).
 A modern web browser that supports WebAssembly.
 Contributing
 Golaxy is open-source! If you'd like to contribute, feel free to open an issue or submit a pull request. We welcome improvements, bug fixes, and documentation updates.
