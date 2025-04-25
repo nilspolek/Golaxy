@@ -30,7 +30,6 @@ func (r Router) Render() {
 	for i := 0; i < elements.Length(); i++ {
 		element := elements.Index(i)
 		if comp, ok = r.Routes[element.Get("tagName").String()]; ok {
-			println(element.Get("tagName").String())
 			element.Set("innerHTML", comp.Render())
 		}
 	}
